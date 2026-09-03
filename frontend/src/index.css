@@ -1,0 +1,575 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family:
+    Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+  background: #f5f7fb;
+  color: #172033;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* =========================
+   LOGIN PAGE
+========================= */
+
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background:
+    radial-gradient(circle at top left, #e8edff 0, transparent 35%),
+    radial-gradient(circle at bottom right, #dff7f1 0, transparent 35%),
+    #f5f7fb;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 460px;
+  background: #ffffff;
+  border: 1px solid #e5e9f2;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 20px 60px rgba(30, 42, 70, 0.1);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 36px;
+}
+
+.logo,
+.small-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #4f46e5;
+  color: #ffffff;
+  font-weight: 800;
+  border-radius: 12px;
+}
+
+.logo {
+  width: 52px;
+  height: 52px;
+  font-size: 18px;
+}
+
+.brand h1 {
+  font-size: 20px;
+  margin-bottom: 2px;
+}
+
+.brand p {
+  color: #7b8498;
+  font-size: 13px;
+}
+
+.login-heading {
+  margin-bottom: 28px;
+}
+
+.login-heading h2 {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.login-heading p {
+  color: #6f788c;
+  line-height: 1.6;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #30394d;
+}
+
+.form-group input {
+  width: 100%;
+  height: 48px;
+  padding: 0 14px;
+  border: 1px solid #d9deea;
+  border-radius: 10px;
+  outline: none;
+  background: #ffffff;
+  color: #172033;
+  transition: 0.2s;
+}
+
+.form-group input:focus {
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
+}
+
+.login-button {
+  width: 100%;
+  height: 48px;
+  margin-top: 4px;
+  border: none;
+  border-radius: 10px;
+  background: #4f46e5;
+  color: white;
+  font-weight: 700;
+  transition: 0.2s;
+}
+
+.login-button:hover {
+  background: #4338ca;
+}
+
+.login-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.error-message {
+  margin-bottom: 16px;
+  padding: 12px 14px;
+  border-radius: 9px;
+  background: #fff1f2;
+  color: #be123c;
+  border: 1px solid #fecdd3;
+  font-size: 14px;
+}
+
+.login-footer {
+  margin-top: 28px;
+  display: flex;
+  justify-content: center;
+  gap: 7px;
+  flex-wrap: wrap;
+  color: #9299aa;
+  font-size: 11px;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+  min-height: 72px;
+  padding: 0 6%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  border-bottom: 1px solid #e7eaf1;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+
+.small-logo {
+  width: 38px;
+  height: 38px;
+  border-radius: 9px;
+  font-size: 13px;
+}
+
+.navbar-brand strong {
+  display: block;
+  font-size: 15px;
+}
+
+.navbar-brand span {
+  display: block;
+  margin-top: 2px;
+  color: #8991a3;
+  font-size: 11px;
+}
+
+.user-area {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.user-info {
+  text-align: right;
+}
+
+.user-info strong {
+  display: block;
+  font-size: 13px;
+}
+
+.user-info span {
+  display: block;
+  margin-top: 2px;
+  color: #4f46e5;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.logout-button {
+  border: 1px solid #dce1eb;
+  background: #ffffff;
+  color: #4a5367;
+  padding: 9px 15px;
+  border-radius: 8px;
+  font-size: 13px;
+}
+
+.logout-button:hover {
+  background: #f5f6fa;
+}
+
+/* =========================
+   DASHBOARD
+========================= */
+
+.dashboard {
+  min-height: 100vh;
+  background: #f5f7fb;
+}
+
+.dashboard-content {
+  width: 88%;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 55px 0;
+}
+
+.welcome {
+  margin-bottom: 48px;
+}
+
+.eyebrow {
+  margin-bottom: 8px;
+  color: #4f46e5;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.4px;
+}
+
+.welcome h1 {
+  font-size: 38px;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+
+.welcome > p:not(.eyebrow) {
+  color: #727b8f;
+  font-size: 16px;
+}
+
+.role-badge {
+  display: inline-block;
+  margin-top: 18px;
+  padding: 7px 12px;
+  border-radius: 20px;
+  background: #edeaff;
+  color: #5148c8;
+  font-size: 12px;
+}
+
+/* =========================
+   APPLICATIONS
+========================= */
+
+.applications-section {
+  margin-bottom: 35px;
+}
+
+.section-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 22px;
+}
+
+.section-header h2 {
+  font-size: 22px;
+}
+
+.permission-count {
+  padding: 7px 11px;
+  border-radius: 20px;
+  background: #ffffff;
+  border: 1px solid #e2e6ef;
+  color: #70798c;
+  font-size: 12px;
+}
+
+.app-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.app-card {
+  display: flex;
+  gap: 18px;
+  padding: 24px;
+  background: #ffffff;
+  border: 1px solid #e3e7ef;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(30, 42, 70, 0.04);
+  transition: 0.2s;
+}
+
+.app-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(30, 42, 70, 0.08);
+}
+
+.app-icon {
+  width: 52px;
+  height: 52px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 13px;
+  background: #f1f3ff;
+  font-size: 24px;
+}
+
+.app-card-content {
+  flex: 1;
+}
+
+.app-card h3 {
+  margin-bottom: 7px;
+  font-size: 17px;
+}
+
+.app-card p {
+  min-height: 42px;
+  color: #737c90;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.access-label {
+  margin: 11px 0;
+  color: #16845a;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.app-button {
+  border: none;
+  padding: 10px 14px;
+  border-radius: 8px;
+  background: #4f46e5;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.app-button:hover {
+  background: #4338ca;
+}
+
+.app-button:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+
+.status-message {
+  margin-bottom: 20px;
+  padding: 13px 15px;
+  border-radius: 9px;
+  background: #eef2ff;
+  border: 1px solid #d9ddff;
+  color: #4338ca;
+  font-size: 13px;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 55px 20px;
+  background: #ffffff;
+  border: 1px dashed #d8deea;
+  border-radius: 16px;
+}
+
+.empty-state > div {
+  font-size: 30px;
+  margin-bottom: 12px;
+}
+
+.empty-state h3 {
+  margin-bottom: 6px;
+}
+
+.empty-state p {
+  color: #7b8497;
+  font-size: 13px;
+}
+
+/* =========================
+   ADMIN PANEL
+========================= */
+
+.admin-panel {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-top: 30px;
+  padding: 25px;
+  background: #20263a;
+  color: #ffffff;
+  border-radius: 16px;
+}
+
+.admin-icon {
+  width: 50px;
+  height: 50px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  background: #30384f;
+  font-size: 22px;
+}
+
+.admin-content {
+  flex: 1;
+}
+
+.admin-content .eyebrow {
+  color: #aeb6ff;
+}
+
+.admin-content h2 {
+  margin-bottom: 5px;
+  font-size: 19px;
+}
+
+.admin-content p:last-child {
+  color: #b7bfd0;
+  font-size: 13px;
+}
+
+.admin-button {
+  border: none;
+  border-radius: 8px;
+  padding: 11px 15px;
+  background: #ffffff;
+  color: #20263a;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+/* =========================
+   SECURITY NOTE
+========================= */
+
+.security-note {
+  display: flex;
+  gap: 13px;
+  align-items: flex-start;
+  margin-top: 24px;
+  padding: 17px;
+  background: #ffffff;
+  border: 1px solid #e3e7ef;
+  border-radius: 12px;
+}
+
+.security-note > span {
+  font-size: 20px;
+}
+
+.security-note strong {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 13px;
+}
+
+.security-note p {
+  color: #7a8396;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 760px) {
+  .navbar {
+    padding: 0 20px;
+  }
+
+  .user-info {
+    display: none;
+  }
+
+  .dashboard-content {
+    width: 92%;
+    padding: 35px 0;
+  }
+
+  .welcome h1 {
+    font-size: 30px;
+  }
+
+  .app-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-panel {
+    flex-wrap: wrap;
+  }
+
+  .admin-button {
+    width: 100%;
+  }
+
+  .login-card {
+    padding: 28px 22px;
+  }
+}
+
+@media (max-width: 450px) {
+  .navbar-brand span {
+    display: none;
+  }
+
+  .app-card {
+    flex-direction: column;
+  }
+
+  .app-icon {
+    width: 46px;
+    height: 46px;
+  }
+
+  .section-header {
+    align-items: flex-start;
+    gap: 12px;
+    flex-direction: column;
+  }
+}
